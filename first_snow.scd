@@ -20,10 +20,6 @@ c = Buffer.read(s, "C:/Users/user/Desktop/first snow/breath intro.wav"); // read
 c.play;      // playing it
 
 
-
-
-
-
 // Let's put some harmonies!
 
 // (snowfall started)
@@ -34,21 +30,7 @@ a.fadeTime = 2; // fadeTime specifies crossfade
 
 a.source = { SinOsc.ar([185,277,311,370], 0, 0.4) };
 
-
 a.clear(3); // clear after 3 seconds
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Bass time!
 // (snowstorm whoo)
@@ -66,12 +48,10 @@ SynthDef("MyBass", { arg freq = 46, sustain = 1, amp = 0.1, att = 0.1, rel = 2, 
 }).add;
 )
 
-
 ~playMyBass = Synth(\MyBass); // Starting with F#
 ~playMyBass.set(\freq, 43);
 
 ~playMyBass.free;
-
 
 
 // Back to harmonies!
